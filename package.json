@@ -1,0 +1,23 @@
+{
+  "name": "ryjdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+  },
+  "engines": {
+    "node": "14.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjhelm/ryjdev.git"
+  },
+  "author": "Ryan Helm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjhelm/ryjdev/issues"
+  },
+  "homepage": "https://github.com/rjhelm/ryjdev#readme"
+}
