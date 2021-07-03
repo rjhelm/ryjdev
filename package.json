@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION npm install npm && run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "engines": {
     "node": "14.17.2"
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/rjhelm/ryjdev/issues"
   },
-  "homepage": "https://github.com/rjhelm/ryjdev#readme"
+  "homepage": "https://github.com/rjhelm/ryjdev#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.1"
+  }
 }
